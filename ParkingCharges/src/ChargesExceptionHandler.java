@@ -1,4 +1,4 @@
-public class ChargesExceptionHandler extends Exception{
+public class ChargesExceptionHandler extends Exception {
     private String message = "";
 
     public ChargesExceptionHandler(String message) {
