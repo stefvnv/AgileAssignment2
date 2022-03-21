@@ -21,13 +21,13 @@ public class ChargesTest extends TestCase {
     // Test Number: 2
     // Objective: Test low invalid values
     // Input(s): Hours = -1
-    // Expected Output: Exception Object with "Invalid (low) values" message
+    // Expected Output: Exception Object with "Invalid (high) values" message
     public void test_calculateCharges002() {
         try {
             testObj.calculateCharges(25);
             fail("Test should not reach this line!");
         } catch (ChargesExceptionHandler e) {
-            assertEquals("Invalid (low) values", e.getMessage());
+            assertEquals("Invalid (high) values", e.getMessage());
         }
     }
 
@@ -88,7 +88,7 @@ public class ChargesTest extends TestCase {
     // Expected Output: 9.50
     public void test_calculateCharges007() {
         try {
-            assertEquals(5.50, testObj.calculateCharges(17.99));
+            assertEquals(9.50, testObj.calculateCharges(17.99));
         } catch (ChargesExceptionHandler e) {
             fail("Test should not reach this line!");
         }
@@ -100,7 +100,7 @@ public class ChargesTest extends TestCase {
     // Expected Output: 10.00
     public void test_calculateCharges008() {
         try {
-            assertEquals(5.50, testObj.calculateCharges(18));
+            assertEquals(10.00, testObj.calculateCharges(18));
         } catch (ChargesExceptionHandler e) {
             fail("Test should not reach this line!");
         }

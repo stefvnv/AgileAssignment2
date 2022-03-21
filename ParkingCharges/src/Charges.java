@@ -15,48 +15,49 @@ public class Charges {
         }
 
         if (hours < 18) {
-            if (hours < 4){
+            if (hours <= 4){
                 return 2.50;
             }
-            if (hours < 5){
+            if (hours <= 5){
                 return 3.00;
             }
-            if (hours < 6){
+            if (hours <= 6){
                 return 3.50;
             }
-            if (hours < 7){
+            if (hours <= 7){
                 return 4.00;
             }
-            if (hours < 8){
+            if (hours <= 8){
                 return 4.50;
             }
-            if (hours < 9){
+            if (hours <= 9){
                 return 5.00;
             }
-            if (hours < 10){
+            if (hours <= 10){
                 return 5.50;
             }
-            if (hours < 11){
+            if (hours <= 11){
                 return 6.00;
             }
-            if (hours < 12){
+            if (hours <= 12){
                 return 6.50;
             }
-            if (hours < 13){
+            if (hours <= 13){
                 return 7.00;
             }
-            if (hours < 14){
+            if (hours <= 14){
                 return 7.50;
             }
-            if (hours < 15){
+            if (hours <= 15){
                 return 8.00;
             }
-            if (hours < 16){
+            if (hours <= 16){
                 return 8.50;
             }
-            if (hours < 17){
-                return 9.50;
+            if (hours <= 17){
+                return 9.00;
             }
+            return 9.50;
         }
 
         if (hours < 25) {
